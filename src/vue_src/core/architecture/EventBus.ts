@@ -16,7 +16,7 @@ export interface EventSubscription {
   filter?: (payload: any) => boolean;
 }
 
-export default class EventBus {
+export class EventBus {
   private subscriptions = new Map<string, EventSubscription[]>();
   private wildcardSubscriptions = new Set<EventSubscription>();
   private isEmitting = false;
@@ -221,3 +221,5 @@ export default class EventBus {
     return `event_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
   }
 }
+
+export default EventBus;

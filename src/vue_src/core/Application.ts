@@ -4,7 +4,6 @@
  */
 
 import { createApp } from 'vue';
-import { createPinia } from 'pinia';
 import App from '../App.vue';
 
 // Core Architecture
@@ -244,10 +243,6 @@ export default class Application {
     
     // Create Vue app
     this.app = createApp(App);
-    
-    // Create Pinia store
-    const pinia = createPinia();
-    this.app.use(pinia);
     
     // Provide services to Vue app
     this.app.provide('services', this.services);

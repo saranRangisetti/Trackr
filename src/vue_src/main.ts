@@ -1,21 +1,14 @@
 /**
- * Advanced Application Entry Point
- * Enterprise-grade application initialization
+ * Simple Trackr Application Entry Point
+ * Basic Chrome extension setup
  */
 
 import '@/assets/tokens.css'
 import '@/assets/main.css'
 import '@/assets/anti-flicker.css'
-import { app } from './core/Application'
+import { createApp } from 'vue'
+import App from './App.vue'
 
-// Initialize the application
-app.initialize().catch(error => {
-  console.error('Failed to initialize application:', error);
-  
-  // Fallback to basic Vue app if advanced initialization fails
-  import('./App.vue').then(({ default: App }) => {
-    import('vue').then(({ createApp }) => {
-      createApp(App).mount('#app');
-    });
-  });
-});
+// Create and mount the Vue app
+const app = createApp(App)
+app.mount('#app')
