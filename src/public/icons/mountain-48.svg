@@ -1,0 +1,18 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Compass ring -->
+  <circle cx="24" cy="24" r="21" stroke="#0a84ff" stroke-width="4" fill="none" opacity="0.8"/>
+  
+  <!-- Compass points -->
+  <path d="M24 6L25.5 10.5L24 15L22.5 10.5L24 6Z" fill="#0a84ff" opacity="0.6"/>
+  <path d="M42 24L37.5 22.5L33 24L37.5 25.5L42 24Z" fill="#0a84ff" opacity="0.6"/>
+  <path d="M24 42L22.5 37.5L24 33L25.5 37.5L24 42Z" fill="#0a84ff" opacity="0.6"/>
+  <path d="M6 24L10.5 25.5L15 24L10.5 22.5L6 24Z" fill="#0a84ff" opacity="0.6"/>
+  
+  <!-- Mountains -->
+  <path d="M6 30L12 21L24 30H6Z" fill="#4A90E2" opacity="0.7"/>
+  <path d="M12 30L18 18L24 30H12Z" fill="#2E5BBA"/>
+  
+  <!-- Sun -->
+  <circle cx="24" cy="15" r="4.5" fill="#FFD700" opacity="0.9"/>
+</svg>
+

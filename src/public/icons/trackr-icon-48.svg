@@ -1,0 +1,25 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue background with rounded corners -->
+  <rect width="48" height="48" rx="8" fill="#0a84ff"/>
+  
+  <!-- White mountain/compass symbol -->
+  <g fill="white">
+    <!-- Compass circle -->
+    <circle cx="24" cy="24" r="15" stroke="white" stroke-width="2" fill="none"/>
+    
+    <!-- Compass points -->
+    <path d="M24 9L25.5 13.5L24 18L22.5 13.5L24 9Z" fill="white"/>
+    <path d="M39 24L34.5 22.5L30 24L34.5 25.5L39 24Z" fill="white"/>
+    <path d="M24 39L22.5 34.5L24 30L25.5 34.5L24 39Z" fill="white"/>
+    <path d="M9 24L13.5 25.5L18 24L13.5 22.5L9 24Z" fill="white"/>
+    
+    <!-- Mountain peaks -->
+    <path d="M12 30L18 21L24 30H12Z" fill="white" opacity="0.9"/>
+    <path d="M18 30L24 18L30 30H18Z" fill="white"/>
+    
+    <!-- Sun -->
+    <circle cx="24" cy="15" r="3" fill="white" opacity="0.8"/>
+  </g>
+</svg>
+
+

@@ -1,0 +1,385 @@
+/* 🛑 PERMANENT ANTI-FLICKER SYSTEM - DO NOT REMOVE */
+
+/* This file contains the ultimate anti-flickering solution that must be maintained across all updates */
+
+/* Complete motion elimination - targets every possible element */
+*, *::before, *::after, *:hover, *:focus, *:active {
+  /* Core motion elimination */
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  
+  /* Animation state controls */
+  animation-duration: 0s !important;
+  animation-delay: 0s !important;
+  animation-iteration-count: 1 !important;
+  animation-fill-mode: none !important;
+  animation-play-state: paused !important;
+  animation-direction: normal !important;
+  animation-timing-function: linear !important;
+  
+  /* Transition state controls */
+  transition-duration: 0s !important;
+  transition-delay: 0s !important;
+  transition-timing-function: linear !important;
+  transition-property: none !important;
+  
+  /* Hardware acceleration disabled */
+  will-change: auto !important;
+  backface-visibility: visible !important;
+  perspective: none !important;
+  transform-style: flat !important;
+  
+  /* Cross-browser vendor prefixes */
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -ms-animation: none !important;
+  -o-animation: none !important;
+  
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  
+  -webkit-backface-visibility: visible !important;
+  -moz-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  -o-backface-visibility: visible !important;
+  
+  -webkit-perspective: none !important;
+  -moz-perspective: none !important;
+  -ms-perspective: none !important;
+  -o-perspective: none !important;
+  
+  -webkit-transform-style: flat !important;
+  -moz-transform-style: flat !important;
+  -ms-transform-style: flat !important;
+  -o-transform-style: flat !important;
+}
+
+/* Force stable rendering on all containers */
+html, body, #app, .premium-container, .card, .btn, .seg, .theme-toggle {
+  contain: layout style paint !important;
+  isolation: isolate !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Prevent layout shifts and horizontal shaking */
+.premium-container,
+.premium-header,
+.header-content,
+.brand-section,
+.header-actions,
+.form-grid,
+.form-grid.two-column,
+.form-grid.two-column > * {
+  contain: layout !important;
+  position: relative !important;
+  flex-shrink: 0 !important;
+  will-change: auto !important;
+}
+
+/* Override any framework or library animations */
+.v-enter-active, .v-leave-active, .v-enter-from, .v-leave-to {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Prevent any CSS animations from external libraries */
+@keyframes "none" {
+  from { transform: none; }
+  to { transform: none; }
+}
+
+/* Force all elements to be completely static */
+* {
+  animation-name: none !important;
+  animation-duration: 0s !important;
+  animation-timing-function: linear !important;
+  animation-delay: 0s !important;
+  animation-iteration-count: 1 !important;
+  animation-direction: normal !important;
+  animation-fill-mode: none !important;
+  animation-play-state: paused !important;
+}
+
+/* Ensure no motion on pseudo-elements */
+*::before, *::after {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Override any remaining motion properties */
+.premium-container,
+.premium-header,
+.card,
+.btn,
+.seg,
+.seg-btn,
+.premium-segment,
+.theme-toggle,
+.logo-container,
+.brand-section,
+.brand-text,
+.brand-title,
+.brand-subtitle,
+.section,
+.section-header,
+.section-title,
+.section-description,
+.form-grid,
+.actions,
+.job-list,
+.job-item,
+.job-info,
+.job-title,
+.job-company,
+.status-select,
+.footer,
+.footer-controls,
+.inputFieldDiv,
+.gridFieldDivHolder,
+.gridDataItem,
+.explanationBg,
+.privacyToggle {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+  backface-visibility: visible !important;
+  perspective: none !important;
+  transform-style: flat !important;
+}
+
+/* CRITICAL: This file must be imported in main.ts to ensure permanent flickering prevention */
+
+/* ULTIMATE SHAKING PREVENTION - Override all conflicting styles */
+.premium-container * {
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Force stable layout on all form elements */
+.inputFieldDiv,
+.gridFieldDivHolder,
+.gridFieldDiv,
+.gridDataItem,
+.explanationBg,
+.textAreaDiv {
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+  width: 100% !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Override any legacy flexbox behavior */
+.aRight,
+.aSelfTop {
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Force stable positioning on all elements */
+* {
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+/* CRITICAL: Fix Vue conditional rendering transitions */
+.v-enter-active,
+.v-leave-active,
+.v-enter-from,
+.v-leave-to,
+.v-enter-to,
+.v-leave-from {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+}
+
+/* Fix theme switching transitions */
+[data-theme="dark"],
+[data-theme="light"] {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Fix tab switching stability */
+.premium-container > * {
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+/* Fix conditional rendering elements */
+.v-if,
+.v-else,
+.v-show {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+}
+
+/* CRITICAL: Fix async operations causing shaking */
+.async-loading,
+.loading,
+.fetching,
+.storage-loading {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Fix reactive updates from Vue watchers */
+.vue-reactive,
+.vue-watch,
+.vue-computed {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+}
+
+/* Fix Chrome storage operations */
+.storage-operation,
+.chrome-storage,
+.local-storage {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+}
+
+/* Fix fetch operations */
+.fetch-operation,
+.api-call,
+.github-stars {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+}
+
+/* Fix file operations */
+.file-operation,
+.file-reader,
+.resume-upload {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+}
+
+/* ULTIMATE: Disable all possible sources of motion */
+*:hover,
+*:focus,
+*:active,
+*:visited,
+*:target,
+*:checked,
+*:disabled,
+*:enabled {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+}
+
+/* RUNTIME STABILITY: Monitor and fix any shaking in real-time */
+.runtime-stable {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  position: relative !important;
+  contain: layout style paint !important;
+  isolation: isolate !important;
+  flex-shrink: 0 !important;
+  will-change: auto !important;
+  backface-visibility: hidden !important;
+  perspective: none !important;
+  transform-style: flat !important;
+}
+
+/* CRITICAL: Override any external library animations */
+@keyframes "none" {
+  0%, 100% { transform: none; }
+}
+
+/* Force stability on all pseudo-elements */
+*::before,
+*::after {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  position: relative !important;
+  contain: layout !important;
+  flex-shrink: 0 !important;
+}
+
+/* Disable all browser default behaviors that could cause shaking */
+* {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-tap-highlight-color: transparent !important;
+}

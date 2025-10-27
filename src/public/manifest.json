@@ -1,0 +1,37 @@
+{
+  "name": "Trackr",
+  "version": "2.0.0",
+  "manifest_version": 3,
+  "description": "Track your job applications and autofill forms with ease. Reach new heights in your career.",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Trackr - Career Navigation"
+  },
+  "icons": {
+    "16": "icons/trackr-icon-16.svg",
+    "48": "icons/trackr-icon-48.svg",
+    "128": "icons/trackr-icon-128.svg"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "js": [
+       
+        "contentScripts/utils.js",
+        "contentScripts/workday.js",
+        "contentScripts/autofill.js"
+      ],
+      "type": "module",
+      "matches": [
+        "https://job-boards.greenhouse.io/*",
+        "https://boards.greenhouse.io/*",
+        "https://jobs.lever.co/*",
+        "https://app.dover.com/*",
+        "https://*.workday.com/*",
+        "https://*.myworkdayjobs.com/*"
+      ],
+      "world": "ISOLATED",
+      "run_at": "document_end"
+    }
+  ]
+}
